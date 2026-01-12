@@ -1,0 +1,53 @@
+/* FULL PAGE */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000000; /* PURE BLACK */
+  color: #ffffff;
+  text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+  margin-top: 15px;
+}
+
+.subtitle {
+  margin-top: -8px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* CANVAS */
+canvas {
+  display: block;
+  margin: 12px auto;
+  background: transparent;
+}
+
+/* VIDEO */
+iframe {
+  width: 90%;
+  max-width: 640px;
+  height: 360px;
+  border-radius: 6px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* TEAM MEMBERS – PURE BLACK */
+.team-box.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  background: #000000;   /* PURE BLACK */
+  padding: 14px 18px;
+  margin-bottom: 30px;
+}
+
+.team-box.horizontal span {
+  white-space: nowrap;
+  font-size: 14px;
+  color: #ffffff;
+}
