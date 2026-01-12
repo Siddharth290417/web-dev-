@@ -1,46 +1,98 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>VSSCO CARD</title>
-        <style>
-            #id1{
-                background-color: #89b7fc;
-                color: black;
-                height: 400px auto;
-                width: 300px ;
-                text-align: center;
-                padding: 10px;
-                border-radius: 30px;
-                border: 5px ridge skyblue;
-                box-shadow: 10px 10px 10px 0px black; 
-                }
-                #id1 button{
-                    background-color: #3486eb;
-                    color: aliceblue;
-                    padding: 10px ;
-                    border-radius: 30px;
-                }
-                #id img{
-                    border: 30px ridge black;
-                    border-radius: 50%;
-                }
-        </style>
-    </head>
-        <body>
-            <div id= "id1"> 
-                <h1>VSSCO</h1>
-                <img src="https://marketplace.canva.com/EAFvMagh96A/2/0/1600w/canva-colorful-modern-infinity-technology-free-logo-pUhZOkMnsk8.jpg " height="300px" width="300px">
-                <p>We are a small startup founded by Siddharth</p>
-                <button>Know more</button>
+<head>
+    <title>VSSCO CARD</title>
 
+    <style>
+        /* ===== PAGE BACKGROUND ===== */
+        body {
+            margin: 0;
+            min-height: 100vh;
 
+            /* STABLE futuristic background */
+            background: url("https://img.freepik.com/free-photo/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_181624-57587.jpg?semt=ais_hybrid&w=740&q=80");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
 
+        /* ===== CARD ===== */
+        #id1 {
+            /* GLASS + IMAGE BACKGROUND */
+            background:
+                linear-gradient(
+                    rgba(0, 0, 0, 0.65),
+                    rgba(0, 0, 0, 0.65)
+                ),
+                url("https://images.unsplash.com/photo-1518770660439-4636190af475");
 
+            background-size: cover;
+            background-position: center;
 
+            color: rgb(161, 204, 243);
+            width: 300px;
+            text-align: center;
+            padding: 15px;
 
-            </div>
+            border-radius: 30px;
+            border: 5px ridge skyblue;
+            box-shadow: 10px 10px 20px black;
 
+            transition: all 1s;
+        }
 
+        #id1 img {
+            border: 5px ridge black;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
 
-    </body>
+        #id1 button {
+            background-color: #3486eb;
+            color: aliceblue;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #id1:hover {
+            transform: scale(1.1);
+        }
+
+        #id1:active {
+            animation: ex linear 3s infinite;
+        }
+
+        @keyframes ex {
+            0%   { transform: rotate(-30deg); }
+            20%  { transform: rotate(0deg); }
+            40%  { transform: rotate(30deg); }
+            60%  { transform: rotate(0deg); }
+            80%  { transform: rotate(-15deg); }
+            100% { transform: rotate(30deg); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="id1">
+        <h1>VSSCO</h1>
+
+        <img src="https://marketplace.canva.com/EAFvMagh96A/2/0/1600w/canva-colorful-modern-infinity-technology-free-logo-pUhZOkMnsk8.jpg"
+             height="200" width="200">
+
+        <p>We are a small startup founded by Siddharth</p>
+
+        <button>Know more</button>
+    </div>
+
+</body>
 </html>
